@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Menstrual Tracker</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <h1>Period Tracker</h1>
+  <form method="post" action="/log_cycle">
+    <fieldset>
+      <legend>Enter your period start and end date</legend>
+      <p>
+        <label for="start-date">Start date</label>
+        <input type="date" name="start_date" id="start-date" required />
+      </p>
+      <p>
+        <label for="end-date">End date</label>
+        <input type="date" name="end_date" id="end-date" required />
+      </p>
+    </fieldset>
+    <p><button type="submit">Add Period</button></p>
+  </form>
+  <section id="past-periods"></section>
+</body>
+</html>
